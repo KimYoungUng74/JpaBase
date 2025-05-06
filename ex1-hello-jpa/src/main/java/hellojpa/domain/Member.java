@@ -15,7 +15,7 @@ public class Member {
 
     @ManyToOne
     @JoinColumn(name = "TEAM_ID")
-    Team team = new Team();
+    Team team;
 
     @Enumerated(EnumType.STRING)
     private MemberType type;
